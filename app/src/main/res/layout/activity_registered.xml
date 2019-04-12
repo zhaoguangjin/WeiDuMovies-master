@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bitmap"
+    android:orientation="vertical"
+    tools:context=".view.activity.RegisteredActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_140">
+
+        <EditText
+            android:textColor="#fff"
+            android:id="@+id/zcnicheng"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/chengni"
+            android:drawablePadding="@dimen/dp_10"
+            android:hint="昵称"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:textColor="#fff"
+            android:id="@+id/zcxingbie"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/xingbie"
+            android:drawablePadding="@dimen/dp_10"
+            android:hint="性别"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:textColor="#fff"
+            android:id="@+id/zcchushengriqi"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/chushengriqi"
+            android:drawablePadding="@dimen/dp_10"
+            android:hint="出生日期"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:textColor="#fff"
+            android:id="@+id/zcshoujihao"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/shouji"
+            android:drawablePadding="@dimen/dp_10"
+            android:hint="手机号"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:textColor="#fff"
+            android:id="@+id/zcyouxiang"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/youxiang"
+            android:drawablePadding="@dimen/dp_10"
+            android:hint="邮箱"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:password="true"
+            android:textColor="#fff"
+            android:id="@+id/zcdenglumima"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/suo"
+            android:drawablePadding="@dimen/dp_10"
+            android:hint="登陆密码"
+            android:textColorHint="#fff" />
+        <EditText
+            android:password="true"
+            android:textColor="#fff"
+            android:id="@+id/zcdenglumima2"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/suo"
+            android:drawablePadding="@dimen/dp_10"
+            android:hint="确认密码"
+            android:textColorHint="#fff" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_78">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/zcbutton"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/button"
+            android:text="注册"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.fragment.PageFourFragment">
+
+    <LinearLayout
+        android:paddingTop="@dimen/dp_150"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/qishi4"
+            android:layout_width="@dimen/dp_205"
+            android:layout_height="@dimen/dp_205" />
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:paddingTop="@dimen/dp_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="八维移动通信学院作品"
+            />
+        <TextView
+            android:textColor="#333333"
+            android:paddingTop="@dimen/dp_20"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:text="带您开启一段美好的电影之旅"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

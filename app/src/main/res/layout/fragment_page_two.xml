@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    tools:context=".view.fragment.PageTwoFragment">
+    <LinearLayout
+        android:paddingTop="@dimen/dp_150"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:layout_gravity="center"
+            android:src="@drawable/qishi2"
+            android:layout_width="@dimen/dp_205"
+            android:layout_height="@dimen/dp_205" />
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:paddingTop="@dimen/dp_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一场鱼影"
+            />
+        <TextView
+            android:textColor="#333333"
+            android:paddingTop="@dimen/dp_20"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:text="看遍人生百态"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>
