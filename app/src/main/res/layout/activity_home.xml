@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bitmap"
-    tools:context=".view.activity.HomeActivity">
+    tools:context="com.bw.movie.view.activity.HomeActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,7 +24,6 @@
             android:drawableLeft="@drawable/shouji"
             android:drawablePadding="@dimen/dp_10"
             android:hint="手机号"
-            android:paddingTop="@dimen/dp_30"
             android:paddingBottom="@dimen/dp_10"
             android:textColor="#fff"
             android:textColorHint="#ffffff " />

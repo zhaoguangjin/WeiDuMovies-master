@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/rectangle26"
-    tools:context=".view.activity.MainActivity">
+    tools:context="com.bw.movie.view.activity.MainActivity">
 <LinearLayout
     android:paddingBottom="@dimen/dp_98"
     android:layout_alignParentBottom="true"

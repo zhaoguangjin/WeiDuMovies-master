@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
 
     android:layout_height="wrap_content"
-    tools:context=".view.fragment.PageTwoFragment">
+    tools:context="com.bw.movie.view.fragment.PageTwoFragment">
     <LinearLayout
         android:paddingTop="@dimen/dp_150"
         android:orientation="vertical"
