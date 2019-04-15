@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="bai">#fff</color>
+    <color name="hei">#333333</color>
+    <color name="jianbian">
+        <gradient android:angle="180" android:endColor="#e8175e" android:startColor="#440a33" />
+
+    </color>
 </resources>

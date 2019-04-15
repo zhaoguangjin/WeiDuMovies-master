@@ -90,7 +90,7 @@ public class StartActivity extends AppCompatActivity {
                 }
              /*   if (i == 3) {
 
-                    edit.putBoolean("First", true);
+                    edit.putBoolean("First", trues);
                     edit.commit();
                     startActivity(new Intent(StartActivity.this, HomeActivity.class));
                 }*/

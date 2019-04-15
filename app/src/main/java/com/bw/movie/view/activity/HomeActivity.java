@@ -105,10 +105,21 @@ public class HomeActivity extends AppCompatActivity implements MainInterface {
             edits.putString("sessionId",sessionId);
             edits.putString("userId",userId+"");
             edits.apply();
-
             Toast.makeText(this, dengLuBean.getMessage(), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(HomeActivity.this,ShouActivity.class);
+            startActivity(intent);
         } else {
             Toast.makeText(this, dengLuBean.getMessage(), Toast.LENGTH_SHORT).show();
         }
+    }
+
+    @Override
+    public void getguanzhu(Object o) {
+
+    }
+
+    @Override
+    public void getquxiao(Object o) {
+
     }
 }

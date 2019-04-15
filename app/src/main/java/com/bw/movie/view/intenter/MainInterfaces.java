@@ -5,9 +5,7 @@ package com.bw.movie.view.intenter;
  * @Date: 2019/4/10 0010 10:28:27:${付贤栋}
  * @Description:
  */
-public interface MainInterface {
+public interface MainInterfaces {
     //*******登录Login*****
-    void LoginOn(Object loginon);
-    void getguanzhu(Object o);
-    void getquxiao(Object o);
+    void LoginOns(Object loginon);
 }

@@ -60,6 +60,16 @@ public class RegisteredActivity extends AppCompatActivity implements MainInterfa
 
     }
 
+    @Override
+    public void getguanzhu(Object o) {
+
+    }
+
+    @Override
+    public void getquxiao(Object o) {
+
+    }
+
     @OnClick(R.id.zcbutton)
     public void onViewClicked() {
         String denglumima2 = zcdenglumima2.getText().toString();

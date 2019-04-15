@@ -2,6 +2,7 @@ package com.bw.movie.model.ulit;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import com.bw.movie.model.app.Api;
 import com.bw.movie.model.app.App;
@@ -27,7 +28,7 @@ public class Ulit {
 
     private Ulit(){
 
-        final OkHttpClient.Builder builder = new OkHttpClient.Builder();
+         OkHttpClient.Builder builder = new OkHttpClient.Builder();
        /* builder.connectTimeout(15, TimeUnit.SECONDS);
         builder.readTimeout(15,TimeUnit.SECONDS);
         builder.writeTimeout(15,TimeUnit.SECONDS);*/
@@ -38,16 +39,18 @@ public class Ulit {
                 SharedPreferences id = App.getapp().getSharedPreferences("ID", Context.MODE_PRIVATE);
                  String sessionId = id.getString("sessionId", "");
                  String userId = id.getString("userId", "");
-
-                Request.Builder builder1 = request.newBuilder();
-                builder1.header("sessionId",sessionId);
-                builder1.header("userId",userId);
-                Request build = builder1.build();
-                return chain.proceed(build);
+                Request build = request.newBuilder()
+                        .addHeader("sessionId", sessionId)
+                        .addHeader("userId", userId).build();
+                Log.i("AA","sessionId"+userId);
+                Log.i("AA","userId"+userId);
+                Response proceed = chain.proceed(build);
+                return proceed;
             }
         });
+        OkHttpClient build1 = builder.build();
         Retrofit build = new Retrofit.Builder()
-                .client(builder.build())
+              .client(build1)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .baseUrl("http://172.17.8.100/")
